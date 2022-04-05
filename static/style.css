@@ -1,0 +1,46 @@
+body {color:#fe9090}
+
+h1{
+  font-family: "Times New Roman", Times, serif;
+  
+}
+
+label{
+    padding:0px;
+    color:#ff9494;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    margin: 3px;
+}
+
+a.testing{
+  font-size: 36px;
+}
+
+.image{
+  width: 300%;
+  height: 300%;
+}
+
+div.oranges {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: spin 1s infinite, mymove 5s infinite;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes spin { 
+  100% {transform: rotate(180deg);} 
+}
+  
+@keyframes mymove{
+  0%   {background: red; left: 200px; top: 100px;}
+  20%  {background: orange; left: 300; top: 0px;}
+  40%  {background: yellow; left: 300; top: 200px;}
+  60%  {background: green; left: 600px; top: 200px;}
+  80% {background: blue; left: 700px; top: 500px;}
+  100% {background: purple; left: 200px; top: 100px;}
+}
+

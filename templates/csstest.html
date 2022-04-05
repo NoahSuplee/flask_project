@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}csssssssss{% endblock %}
+
+{% block content %}
+
+<style> 
+
+/* div {
+  position: fixed;
+  animation: spin 1s infinite;
+}
+ */
+
+.bar
+{
+-webkit-animation: spin1 30s infinite linear;
+-moz-animation: spin1 30s infinite linear;
+-o-animation: spin1 30s infinite linear;
+-ms-animation: spin1 30s infinite linear;
+animation: spin1 30s infinite linear;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 800px 400px;
+    width: 256px;
+    height: 256px;
+}
+ 
+@-webkit-keyframes spin1 {
+0% { -webkit-transform: rotate(0deg);}
+100% { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin1 {
+0% { -moz-transform: rotate(0deg); }
+100% { -moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin1 {
+0% { -o-transform: rotate(0deg);}
+100% { -o-transform: rotate(360deg);}
+}
+@-ms-keyframes spin1 {
+0% { -ms-transform: rotate(0deg);}
+100% { -ms-transform: rotate(360deg);}
+}
+@-keyframes spin1 {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg);}
+} 
+  
+</style>
+  
+<h1>The test</h1>
+
+<p>this is a test.</p>
+<div class="oranges">
+  <img class="image" src="./static/orange.png" alt="">
+</div>
+
+<body.tester>
+<p>asdfkjlhasldfkjhj</p>
+</body>
+
+{% endblock %}
