@@ -1,14 +1,6 @@
 from flask import Flask, redirect, url_for, render_template, request, session, flash
 from flask_sqlalchemy import SQLAlchemy
 from datetime import timedelta
-import mysql.connector as mariadb
-
-mariadb_connection = mariadb.connect(user="test", password="password", host="localhost")
-
-create_cursor = mariadb_connection.cursor()
-create_cursor.execute("CREATE DATABASE text_database")
-
-create_cursor.execute("SHOW DATABASE")
 
 def test(a=0):
   if a == 0:
@@ -141,6 +133,5 @@ def answer():
 def css():
   return render_template("csstest.html")
 
-if __name__ == "__main.py__":
-  db.create_all()
-  app.run(host='0.0.0.0', port=8080, debug=True)
+db.create_all()
+app.run(host='0.0.0.0', port=8080, debug=True)

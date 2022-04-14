@@ -18,13 +18,13 @@ a.testing{
 }
 
 .image{
-  width: 300%;
-  height: 300%;
+  width: 1000px;
+  height: 1000px;
 }
 
 div.oranges {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 500px;
   background: red;
   position: relative;
   animation: spin 1s infinite, mymove 5s infinite;
