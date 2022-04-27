@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Survey Page{% endblock %}
+{% block content %}
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for msg in messages %}
+      <p>{{msg}}</p>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+{% set questions = lists %}
+
+{% for question in questions %}
+    <h1>{{ question[0] }}</h1>
+<form action='#' method='post'>
+    <input type="radio" name="question{{ loop.index }}" id="{{ question[1] }}" value="{{ question[1] }}" />
+    <label for="{{ i }}">{{question[1]}}</label><br/>
+    <input type="radio" name="question{{ loop.index }}" id="{{ question[2] }}" value="{{ question[2] }}" />         <label for="{{ i }}">{{question[2]}}</label><br/>
+    <input type="radio" name="question{{ loop.index }}" id="{{ question[3] }}" value="{{ question[3] }}" />
+    <label for="{{ i }}">{{question[3]}}</label><br/>
+    {% if loop.index == 3 %}
+      <input type="submit" value="Submit">
+
+  {% endif %}
+{% endfor %}
+</form>
+<!-- <form action='#' method='post'>
+
+<h1>{{question}}</h1>
+  
+<input checked="checked" type="radio" name="user_level" id="rd1" value="a"/>
+<label for="rd1">{{an1}}</label><br/>
+<input type="radio" name="user_level" id="rd2" value="b"/>
+<label for="rd2">{{an2}}</label><br/>
+<input type="radio" name="user_level" id="rd3" value="c"/>
+<label for="rd3">{{an3}}</label><br/>
+
+<input type="submit" value="Submit">
+  
+</form>
+ -->
+{% endblock %}
