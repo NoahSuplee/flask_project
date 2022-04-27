@@ -1,2 +1,3 @@
 # flask_project
-first flask project
+This is my first flask project.
+Can not wait to make more. :)
